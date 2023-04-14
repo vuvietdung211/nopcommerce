@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="NopCommerce">
+
+	<parameter name="role" value="admin"></parameter>
+	<parameter name="server" value="test"></parameter>
+	
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+
+
+		<classes>
+			<class name="com.nopcommerce.admin.Level_24_Environment_XML" />
+		</classes>
+	</test>
+
+
+
+
+</suite> 
+ 
