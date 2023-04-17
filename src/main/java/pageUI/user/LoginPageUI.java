@@ -1,8 +1,8 @@
-package PageUI;
+package pageUI.user;
 
 public class LoginPageUI {
 	
-	public static final String LOGIN_LINK = ".ico-login";
+	public static final String LOGIN_LINK = "css=.ico-login";
 	public static final String PASSWORD_BUTTON = "";
 	public static final String LOGIN_BUTTON = "";
 	public static final String REMEMBER_ME_CHECKBOX = "";
