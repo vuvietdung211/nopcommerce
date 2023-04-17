@@ -1,8 +1,9 @@
-package userPO;
+package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
 
-import PageUI.LoginPageUI;
+import pageUI.*;
+import pageUI.user.LoginPageUI;
 import commons.BasePage;
 import io.qameta.allure.Step;
 

@@ -1,9 +1,10 @@
-package userPO;
+package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import PageUI.RegisterPageUI;
+import pageUI.*;
+import pageUI.user.RegisterPageUI;
 import commons.BasePage;
 import io.qameta.allure.Step;
 

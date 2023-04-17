@@ -19,10 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import PageUI.LoginPageUI;
 import io.qameta.allure.Step;
-import userPO.PageGeneratorManager;
-import userPO.UserRegisterPO;
 
 public class BasePage {
 	protected void sleepInSecond(int time) {
