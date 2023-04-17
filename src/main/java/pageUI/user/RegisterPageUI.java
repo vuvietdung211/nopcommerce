@@ -13,6 +13,7 @@ public class RegisterPageUI {
 	
 	
 	// dynamic locator
+	public static final String TEXTBOX_BY_ID = "xpath=//input[@id='%s']";
 	public static final String RADIO_BUTTON_BY_NAME = "Xpath=//label[contains(text(),'%s')]";
 	public static final String TEXTBOX_BY_LABEL = "Xpath=//input//preceding-sibling::label[contains(text(),'%s')]";
 	public static final String ERROR_MESSAGE_REQUIRED = "Xpath=//span[contains(text(), '%s')]";

@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.Assert;
+import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -77,4 +79,23 @@ public class BaseTest {
 		return driver;
 	}
 	
+	private boolean checkEquals(Object actual, Object expected) {
+		boolean pass = true;
+		try {
+			Assert.assertEquals(actual, expected);
+			log.info(" -------------------------- PASSED -------------------------- ");
+		} catch (Throwable e) {
+			pass = false;
+			log.info(" -------------------------- FAILED -------------------------- ");
+			/*
+			 * VerificationFailures.getFailures().addFailureForTest(Reporter.
+			 * getCurrentTestResult(), e); Reporter.getCurrentTestResult().setThrowable(e);
+			 */
+		}
+		return pass;
+	}
+
+	protected boolean verifyEquals(Object actual, Object expected) {
+		return checkEquals(actual, expected);
+	}
 }

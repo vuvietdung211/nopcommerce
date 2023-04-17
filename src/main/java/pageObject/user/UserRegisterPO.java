@@ -22,14 +22,6 @@ public class UserRegisterPO extends BasePage{
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
 	}
 	
-	@Step("Verify error message required")
-	public boolean verifyErrorMessageRequired(String errorMessage) {
-		String actualMessage =getElementText(driver, getDynamicXpath(RegisterPageUI.ERROR_MESSAGE_REQUIRED, errorMessage));
-		if (actualMessage.equals(errorMessage)) {
-			return true;
-		}
-		return false;
-	}
 	
 	@Step("Verify success message registration")
 	public void verifySuccessRegister(String successMessage) {
@@ -41,5 +33,9 @@ public class UserRegisterPO extends BasePage{
 	public void clickToContinueButton() {
 		waitForElementClickable(driver, RegisterPageUI.CONTINUE_BUTTON);
 		clickToElement(driver, RegisterPageUI.CONTINUE_BUTTON);
+	}
+
+
+		
 	}
 }
