@@ -10,4 +10,5 @@ public class UserBasePageUI {
 	public static final String DYNAMIC_BUTTON_BY_TEXT = "xpath=//button[text()='%s']";
 	public static final String DYNAMIC_ERROR_MESSAGE_BY_NAME_ID = "xpath=//span[@id=\"'%s'-error\"]";
 
+
 }

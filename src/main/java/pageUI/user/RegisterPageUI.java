@@ -9,6 +9,7 @@ public class RegisterPageUI {
 	public static final String REGISTER_LINK = "";		
 	public static final String REGISTER_BUTTON = "";
 	public static final String SUCCESS_REGISTER_TEXT = "Xpath=//div[text()='Your registration completed']";
+	public static final String EXISTING_EMAIL_ERROR_MESSAGE = "css=div.message-error ul li";
 
 	
 	

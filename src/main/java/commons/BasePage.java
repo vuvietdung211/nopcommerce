@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.qameta.allure.Step;
-import pageUI.nopCommerce.user.UserBasePageUI;
+import commons.UserBasePageUI;
 
 public class BasePage {
 	protected void sleepInSecond(int time) {
@@ -557,6 +557,12 @@ public class BasePage {
 	public String getErrorMessageByName(WebDriver driver, String valueErrornameText) {
 		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_ERROR_MESSAGE_BY_NAME_ID, valueErrornameText);
 		return getElementText(driver, UserBasePageUI.DYNAMIC_ERROR_MESSAGE_BY_NAME_ID, valueErrornameText);
+	}
+	
+	@Step("Click to link by header name")
+	public void clickToHeaderLinkByName(WebDriver driver,String headerName) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_HEADER, headerName);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGE_HEADER, headerName);
 	}
 
 }

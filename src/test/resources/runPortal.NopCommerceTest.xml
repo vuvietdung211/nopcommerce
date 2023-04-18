@@ -18,7 +18,7 @@
   	<parameter name ="browser" value ="firefox"/>
     <classes>
       <class name=""/>
-      <class name="com.nopcommerce.user.Level_14_Register_Login_Share_State"/>
+      <class name="testcases.user.TestCase01_Register"/>
     </classes>
   </test>
   

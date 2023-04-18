@@ -23,10 +23,10 @@ public class UserRegisterPO extends BasePage{
 	}
 	
 	
-	@Step("Verify success message registration")
-	public void verifySuccessRegister(String successMessage) {
-		String actualMeassage = getElementText(driver, RegisterPageUI.SUCCESS_REGISTER_TEXT);
-		Assert.assertEquals(actualMeassage, successMessage);
+	@Step("Get success message registration")
+	public String getSuccessRegister() {
+		waitForElementVisible(driver, RegisterPageUI.SUCCESS_REGISTER_TEXT);
+		return getElementText(driver, RegisterPageUI.SUCCESS_REGISTER_TEXT);
 	}
 	
 	@Step("Click to continue button")
@@ -35,7 +35,12 @@ public class UserRegisterPO extends BasePage{
 		clickToElement(driver, RegisterPageUI.CONTINUE_BUTTON);
 	}
 
+	public String getExistingEmailErrorMessage() {
+		waitForElementVisible(driver, RegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
+		return getElementText(driver, RegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
+	}
+
 
 		
-	}
+	
 }
