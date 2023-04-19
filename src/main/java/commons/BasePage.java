@@ -565,4 +565,9 @@ public class BasePage {
 		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGE_HEADER, headerName);
 	}
 
+	@Step("Get error message for validation email or password")
+	public String getErrorMessageValidation(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.ERROR_MESSAGE_VALIDATION);
+		return getElementText(driver, UserBasePageUI.ERROR_MESSAGE_VALIDATION);
+	}
 }

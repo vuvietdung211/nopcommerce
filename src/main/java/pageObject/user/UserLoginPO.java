@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pageUI.*;
 import pageUI.user.LoginPageUI;
 import commons.BasePage;
+import commons.UserBasePageUI;
 import io.qameta.allure.Step;
 
 public class UserLoginPO extends BasePage {
@@ -37,5 +38,6 @@ public class UserLoginPO extends BasePage {
 		waitForElementClickable(driver, LoginPageUI.FORGOT_PASSWORD_LINK);
 		clickToElement(driver, LoginPageUI.FORGOT_PASSWORD_LINK);
 	}
+	
 	
 }

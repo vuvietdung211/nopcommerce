@@ -3,26 +3,16 @@
 <suite name="NopCommerce">
 
 	
-<parameter name ="url" value ="https://demo.nopcommerce.com/"/>
-    <parameter name ="browser" value ="chrome"/>
 
-
-    <listeners>
-<!-- 		<listener class-name ="commons.MethodListener"/> -->
-		<listener class-name ="actions.reportConfig.AllureTestListener"/>
-	</listeners>
-  
-  
-  
+<parameter name ="url" value ="dev"/>
+  <parameter name ="browser" value ="chrome"/>
+ 
   <test name="Run on Chrome">
-  	<parameter name ="browser" value ="firefox"/>
     <classes>
-      <class name=""/>
-      <class name="testcases.user.TestCase01_Register"/>
+    
+      <class name="testcases.user.TestCase02_Login"/>
     </classes>
   </test>
-  
-  
-  
+
 </suite> 
  
