@@ -10,7 +10,7 @@
   <test name="Run on Chrome">
     <classes>
     
-      <class name="testcases.user.TestCase02_Login"/>
+      <class name="testcases.user.TestCase01_Register"/>
     </classes>
   </test>
 

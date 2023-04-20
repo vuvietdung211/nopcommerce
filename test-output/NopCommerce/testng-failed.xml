@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="dev"/>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <classes>
+      <class name="testcases.user.TestCase02_Login">
+        <methods>
+          <include name="User_03_Login_Invalid_Email"/>
+          <include name="user01dsadsa"/>
+          <include name="User_01_Login_Empty"/>
+          <include name="User_04_Login_Blank_Password"/>
+          <include name="beforeClass"/>
+          <include name="User_02_Login_Invalid_Email"/>
+          <include name="User_05_Login_Invalid_Password"/>
+          <include name="User_06_Login_Not_Registered_Email"/>
+        </methods>
+      </class> <!-- testcases.user.TestCase02_Login -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [NopCommerce] -->
