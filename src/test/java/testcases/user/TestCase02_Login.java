@@ -25,7 +25,7 @@ public class TestCase02_Login extends BaseTest{
 	@BeforeClass
 	@Parameters({"browser", "url"})
 	public void beforeClass(String browser, String url) {
-		getBrowserdriver(browser, url);
+		driver = getBrowserdriver(browser, url);
 		userHome = PageGeneratorManager.getUserHomePage(driver);
 		registeredEmail = "asvsbs@gmail.com";
 		notRegisteredEmail = "takumi121@gmail.com";
@@ -82,7 +82,7 @@ public class TestCase02_Login extends BaseTest{
 	
 	@Test
 	public void User_01_Login_Empty() {
-		userHome.clickToHeaderLinkByName(driver, "Log in");
+		userRegister.clickToHeaderLinkByName(driver, "Log in");
 		
 		userLogin = PageGeneratorManager.getUserLoginPage(driver);
 		
@@ -117,6 +117,8 @@ public class TestCase02_Login extends BaseTest{
 		
 		userLogin.inputToTextboxByID(driver, "", "Password");
 		
+		userLogin.clickToButtonByText(driver, "Log in");
+		
 		verifyEquals(userLogin.getErrorMessageValidation(driver), errorCredentailIncorrect);
 		
 	}
@@ -128,6 +130,8 @@ public class TestCase02_Login extends BaseTest{
 		
 		userLogin.inputToTextboxByID(driver, invalidPassword, "Password");
 		
+		userLogin.clickToButtonByText(driver, "Log in");
+		
 		verifyEquals(userLogin.getErrorMessageValidation(driver), errorCredentailIncorrect);
 		
 	}
@@ -138,6 +142,8 @@ public class TestCase02_Login extends BaseTest{
 		userLogin.inputToTextboxByID(driver, registeredEmail, "Email");
 		
 		userLogin.inputToTextboxByID(driver, registeredPassword, "Password");
+		
+		userLogin.clickToButtonByText(driver, "Log in");
 		
 		userHome = PageGeneratorManager.getUserHomePage(driver);
 		

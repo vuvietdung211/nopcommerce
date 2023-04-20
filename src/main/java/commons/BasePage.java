@@ -351,6 +351,10 @@ public class BasePage {
 		return getWebElement(driver, locator).isSelected();
 	}
 
+	public boolean isElementSelected(WebDriver driver, String locator, String...dynamicValue) {
+		return getWebElement(driver, getDynamicXpath(locator, dynamicValue)).isSelected();
+	}
+	
 	public void switchToFrameIframe(WebDriver driver, String locator) {
 		driver.switchTo().frame(getWebElement(driver, locator));
 	}
@@ -569,5 +573,18 @@ public class BasePage {
 	public String getErrorMessageValidation(WebDriver driver) {
 		waitForElementVisible(driver, UserBasePageUI.ERROR_MESSAGE_VALIDATION);
 		return getElementText(driver, UserBasePageUI.ERROR_MESSAGE_VALIDATION);
+	}
+	
+	public boolean isGenderRadioButtonChecked(WebDriver driver, String gender) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_RADIO_BUTTON_BY_ID, gender);
+		if (isElementSelected(driver, UserBasePageUI.DYNAMIC_RADIO_BUTTON_BY_ID, gender)) {
+			return true;
+		}
+		return false;
+	}
+	
+	public String getTextValueOfTextbox(WebDriver driver, String textboxID) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID);
+		return getElementText(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID);
 	}
 }

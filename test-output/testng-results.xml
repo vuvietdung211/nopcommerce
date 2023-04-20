@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-19T09:54:55Z" name="NopCommerce" finished-at="2023-04-19T09:55:08Z" duration-ms="13466">
+  <suite started-at="2023-04-20T01:47:30Z" name="NopCommerce" finished-at="2023-04-20T01:47:43Z" duration-ms="12979">
     <groups>
     </groups>
-    <test started-at="2023-04-19T09:54:55Z" name="Run on Chrome" finished-at="2023-04-19T09:55:08Z" duration-ms="13466">
-      <class name="testcases.user.TestCase01_Register">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:54:55Z" name="beforeClass" finished-at="2023-04-19T09:55:01Z" duration-ms="6012" status="PASS">
+    <test started-at="2023-04-20T01:47:30Z" name="Run on Chrome" finished-at="2023-04-20T01:47:43Z" duration-ms="12979">
+      <class name="testcases.user.TestCase02_Login">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:30Z" name="beforeClass" finished-at="2023-04-20T01:47:38Z" duration-ms="8459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,35 +23,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register_Empty()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:01Z" name="User_01_Register_Empty" finished-at="2023-04-19T09:55:02Z" duration-ms="1631" status="PASS">
+        <test-method signature="User_01_Login_Empty()[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:38Z" name="User_01_Login_Empty" finished-at="2023-04-20T01:47:39Z" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_01_Register_Empty -->
-        <test-method signature="User_02_Register_Wrong_Email()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:03Z" name="User_02_Register_Wrong_Email" finished-at="2023-04-19T09:55:03Z" duration-ms="238" status="PASS">
+        </test-method> <!-- User_01_Login_Empty -->
+        <test-method signature="User_02_Login_Invalid_Email()[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:39Z" name="User_02_Login_Invalid_Email" finished-at="2023-04-20T01:47:39Z" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_02_Register_Wrong_Email -->
-        <test-method signature="User_03_Register_Success()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:03Z" name="User_03_Register_Success" finished-at="2023-04-19T09:55:05Z" duration-ms="1918" status="PASS">
+        </test-method> <!-- User_02_Login_Invalid_Email -->
+        <test-method signature="User_03_Login_Invalid_Email()[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:39Z" name="User_03_Login_Invalid_Email" finished-at="2023-04-20T01:47:40Z" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_03_Register_Success -->
-        <test-method signature="User_04_Register_Existing_Email()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:06Z" name="User_04_Register_Existing_Email" finished-at="2023-04-19T09:55:08Z" duration-ms="1625" status="PASS">
+        </test-method> <!-- User_03_Login_Invalid_Email -->
+        <test-method signature="User_04_Login_Blank_Password()[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:40Z" name="User_04_Login_Blank_Password" finished-at="2023-04-20T01:47:40Z" duration-ms="643" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_04_Register_Existing_Email -->
-        <test-method signature="User_05_Register_Invalid_Password()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:08Z" name="User_05_Register_Invalid_Password" finished-at="2023-04-19T09:55:08Z" duration-ms="278" status="PASS">
+        </test-method> <!-- User_04_Login_Blank_Password -->
+        <test-method signature="User_05_Login_Invalid_Password()[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:40Z" name="User_05_Login_Invalid_Password" finished-at="2023-04-20T01:47:41Z" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_05_Register_Invalid_Password -->
-        <test-method signature="User_06_Register_Confirm_Password_Not_Match()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:08Z" name="User_06_Register_Confirm_Password_Not_Match" finished-at="2023-04-19T09:55:08Z" duration-ms="130" status="PASS">
+        </test-method> <!-- User_05_Login_Invalid_Password -->
+        <test-method signature="User_06_Login_Not_Registered_Email()[pri:0, instance:testcases.user.TestCase02_Login@7ca0863b]" started-at="2023-04-20T01:47:41Z" name="User_06_Login_Not_Registered_Email" finished-at="2023-04-20T01:47:43Z" duration-ms="1489" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_06_Register_Confirm_Password_Not_Match -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.user.TestCase01_Register@5eb97ced]" started-at="2023-04-19T09:55:08Z" name="afterClass" finished-at="2023-04-19T09:55:08Z" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testcases.user.TestCase01_Register -->
+        </test-method> <!-- User_06_Login_Not_Registered_Email -->
+      </class> <!-- testcases.user.TestCase02_Login -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- NopCommerce -->
 </testng-results>
