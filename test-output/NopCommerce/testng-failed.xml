@@ -5,12 +5,14 @@
   <parameter name="url" value="dev"/>
   <test thread-count="5" name="Run on Chrome(failed)">
     <classes>
-      <class name="testcases.user.TestCase02_Login">
+      <class name="testcases.user.TestCase03_MyAccount">
         <methods>
-          <include name="User_04_Login_Blank_Password"/>
           <include name="beforeClass"/>
+          <include name="User_06_Login_Not_Registered_Email"/>
+          <include name="User_01_My_Account_Update_Customer"/>
+          <include name="User_05_Login_Invalid_Password"/>
         </methods>
-      </class> <!-- testcases.user.TestCase02_Login -->
+      </class> <!-- testcases.user.TestCase03_MyAccount -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->

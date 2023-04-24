@@ -23,7 +23,7 @@ public class TestCase03_MyAccount extends BaseTest{
 	invalidPassword, errorLowerPassword, errorConfirmPassword, invalidEmail, errorWrongEmail
 	, notRegisteredEmail, errorNotRegisteredEmail, errorCredentailIncorrect, welcomeToOurStoreText
 	, updateGender, updateFirstName, updateLastName, updateDate, updateMonth, updateYear, updateEmail
-	, updateCompany ;
+	, updateCompany, successNotificationBarText ;
 	
 	
 	@BeforeClass
@@ -63,7 +63,8 @@ public class TestCase03_MyAccount extends BaseTest{
 		updateMonth = "01";
 		updateYear = "1996";
 		updateEmail = "automationfc.vn@gmail.com";
-		updateCompany = "Automation FC";		
+		updateCompany = "Automation FC";	
+		successNotificationBarText = "The customer info has been updated successfully.";
 		
 		// Register new account
 		userHome.clickToHeaderLinkByName(driver, "Register");
@@ -96,7 +97,7 @@ public class TestCase03_MyAccount extends BaseTest{
 		
 		userLogin = PageGeneratorManager.getUserLoginPage(driver);
 
-		userLogin.inputToTextboxByID(driver, registeredEmail, url);
+		userLogin.inputToTextboxByID(driver, registeredEmail, "Email");
 		
 		userLogin.inputToTextboxByID(driver, registeredPassword, "Password");
 
@@ -107,6 +108,8 @@ public class TestCase03_MyAccount extends BaseTest{
 	public void User_01_My_Account_Update_Customer() {
 		
 		userMyAccount = PageGeneratorManager.getUserMyAccountPage(driver);
+		
+		userMyAccount.clickToHeaderLinkByName(driver, "My account");
 		
 		userMyAccount.clickToGenderRadioButtonByID(driver, "gender-female");
 		
@@ -120,9 +123,13 @@ public class TestCase03_MyAccount extends BaseTest{
 
 		userMyAccount.selectDropDownByName(driver, "DateOfBirthYear" , updateYear);
 		
+		userMyAccount.inputToTextboxByID(driver, updateEmail, "Email");
+		
 		userMyAccount.inputToTextboxByID(driver, "Company", updateCompany);
 		
 		userMyAccount.clickToButtonByText(driver, "Save");
+		
+		verifyEquals(userMyAccount.getNotificationBarText(), successNotificationBarText);
 		
 		verifyTrue(userMyAccount.isGenderRadioButtonChecked(driver, "gender-female"));
 		

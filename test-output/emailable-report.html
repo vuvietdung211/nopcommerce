@@ -9,15 +9,83 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">NopCommerce</th></tr>
-<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">12,979</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">3</td><td class="num">116,753</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testcases.user.TestCase02_Login</td><td><a href="#m0">User_01_Login_Empty</a></td><td rowspan="1">1681955258739</td><td rowspan="1">676</td></tr><tr class="passedeven"><td><a href="#m1">User_02_Login_Invalid_Email</a></td><td rowspan="1">1681955259721</td><td rowspan="1">253</td></tr><tr class="passedeven"><td><a href="#m2">User_03_Login_Invalid_Email</a></td><td rowspan="1">1681955259991</td><td rowspan="1">167</td></tr><tr class="passedeven"><td><a href="#m3">User_04_Login_Blank_Password</a></td><td rowspan="1">1681955260171</td><td rowspan="1">643</td></tr><tr class="passedeven"><td><a href="#m4">User_05_Login_Invalid_Password</a></td><td rowspan="1">1681955260817</td><td rowspan="1">769</td></tr><tr class="passedeven"><td><a href="#m5">User_06_Login_Not_Registered_Email</a></td><td rowspan="1">1681955261652</td><td rowspan="1">1489</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">testcases.user.TestCase03_MyAccount</td><td><a href="#m0">User_01_My_Account_Update_Customer</a></td><td rowspan="1">1682317154154</td><td rowspan="1">21183</td></tr><tr class="failedeven"><td><a href="#m1">User_05_Login_Invalid_Password</a></td><td rowspan="1">1682317177145</td><td rowspan="1">40806</td></tr><tr class="failedeven"><td><a href="#m2">User_06_Login_Not_Registered_Email</a></td><td rowspan="1">1682317217962</td><td rowspan="1">40758</td></tr><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testcases.user.TestCase03_MyAccount</td><td><a href="#m3">User_02_Login_Invalid_Email</a></td><td rowspan="1">1682317176989</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m4">User_03_Login_Invalid_Email</a></td><td rowspan="1">1682317177103</td><td rowspan="1">11</td></tr><tr class="passedeven"><td><a href="#m5">User_04_Login_Blank_Password</a></td><td rowspan="1">1682317177118</td><td rowspan="1">21</td></tr></tbody>
 </table>
-<h2>Run on Chrome</h2><h3 id="m0">testcases.user.TestCase02_Login#User_01_Login_Empty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.user.TestCase02_Login#User_02_Login_Invalid_Email</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.user.TestCase02_Login#User_03_Login_Invalid_Email</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.user.TestCase02_Login#User_04_Login_Blank_Password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.user.TestCase02_Login#User_05_Login_Invalid_Password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.user.TestCase02_Login#User_06_Login_Not_Registered_Email</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on Chrome</h2><h3 id="m0">testcases.user.TestCase03_MyAccount#User_01_My_Account_Update_Customer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 01
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
+	at commons.BasePage.selectItemInDefaultDropdown(BasePage.java:200)
+	at commons.BasePage.selectDropDownByName(BasePage.java:545)
+	at testcases.user.TestCase03_MyAccount.User_01_My_Account_Update_Customer(TestCase03_MyAccount.java:120)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.user.TestCase03_MyAccount#User_05_Login_Invalid_Password</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;Password&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementVisible(BasePage.java:488)
+	at commons.BasePage.inputToTextboxByID(BasePage.java:539)
+	at testcases.user.TestCase03_MyAccount.User_05_Login_Invalid_Password(TestCase03_MyAccount.java:173)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;Password&apos;]&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\user-pg\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a785c3eabcf604c09a1a1f4502dbb4b
+*** Element info: {Using=xpath, value=//input[@id=&apos;Password&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.user.TestCase03_MyAccount#User_06_Login_Not_Registered_Email</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;Password&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementVisible(BasePage.java:488)
+	at commons.BasePage.inputToTextboxByID(BasePage.java:539)
+	at testcases.user.TestCase03_MyAccount.User_06_Login_Not_Registered_Email(TestCase03_MyAccount.java:186)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;Password&apos;]&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\user-pg\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a785c3eabcf604c09a1a1f4502dbb4b
+*** Element info: {Using=xpath, value=//input[@id=&apos;Password&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.user.TestCase03_MyAccount#User_02_Login_Invalid_Email</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.user.TestCase03_MyAccount#User_03_Login_Invalid_Email</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.user.TestCase03_MyAccount#User_04_Login_Blank_Password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
