@@ -1,6 +1,7 @@
 package testcases.user;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -137,7 +138,7 @@ public class TestCase02_Login extends BaseTest{
 	}
 	
 	@Test
-	public void User_06_Login_Not_Registered_Email() {
+	public void User_06_Login_Success() {
 		
 		userLogin.inputToTextboxByID(driver, registeredEmail, "Email");
 		
@@ -149,5 +150,10 @@ public class TestCase02_Login extends BaseTest{
 		
 		verifyEquals(userHome.getWelcomeTextOnHomePage(), welcomeToOurStoreText);
 		
+	}
+	
+	@AfterClass()
+	public void afterClass() {
+		driver.quit();
 	}
 }

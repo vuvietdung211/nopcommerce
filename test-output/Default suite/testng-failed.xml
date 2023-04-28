@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.user.TestCase02_Login">
+      <class name="testcases.user.TestCase03_MyAccount">
         <methods>
-          <include name="User_03_Login_Invalid_Email"/>
-          <include name="User_01_Login_Empty"/>
           <include name="User_04_Login_Blank_Password"/>
+          <include name="User_03_Login_Invalid_Email"/>
           <include name="beforeClass"/>
-          <include name="User_02_Login_Invalid_Email"/>
-          <include name="User_05_Login_Invalid_Password"/>
           <include name="User_06_Login_Not_Registered_Email"/>
+          <include name="User_02_Login_Invalid_Email"/>
+          <include name="User_01_My_Account_Update_Customer"/>
+          <include name="User_05_Login_Invalid_Password"/>
         </methods>
-      </class> <!-- testcases.user.TestCase02_Login -->
+      </class> <!-- testcases.user.TestCase03_MyAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

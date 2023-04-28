@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content failed suite-NopCommerce">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_01_My_Account_Update_Customer">User_01_My_Account_Update_Customer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_05_Login_Invalid_Password">User_05_Login_Invalid_Password</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_06_Login_Not_Registered_Email">User_06_Login_Not_Registered_Email</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_03_My_Account_Change_Password">User_03_My_Account_Change_Password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-NopCommerce -->
@@ -126,17 +116,22 @@
                     <div class="method-list-content passed suite-NopCommerce">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_02_Login_Invalid_Email">User_02_Login_Invalid_Email</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_01_My_Account_Update_Customer">User_01_My_Account_Update_Customer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_03_Login_Invalid_Email">User_03_Login_Invalid_Email</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_02_My_Account_Addresses">User_02_My_Account_Addresses</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_04_Login_Blank_Password">User_04_Login_Blank_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_05_Login_Invalid_Password">User_05_Login_Invalid_Password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-NopCommerce -->
@@ -159,95 +154,27 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="User_01_My_Account_Update_Customer">
-                  </a> <!-- User_01_My_Account_Update_Customer -->
-                  <span class="method-name">User_01_My_Account_Update_Customer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 01
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at commons.BasePage.selectItemInDefaultDropdown(BasePage.java:200)
-	at commons.BasePage.selectDropDownByName(BasePage.java:545)
-	at testcases.user.TestCase03_MyAccount.User_01_My_Account_Update_Customer(TestCase03_MyAccount.java:120)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_05_Login_Invalid_Password">
-                  </a> <!-- User_05_Login_Invalid_Password -->
-                  <span class="method-name">User_05_Login_Invalid_Password</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;Password&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.BasePage.waitForElementVisible(BasePage.java:488)
-	at commons.BasePage.inputToTextboxByID(BasePage.java:539)
-	at testcases.user.TestCase03_MyAccount.User_05_Login_Invalid_Password(TestCase03_MyAccount.java:173)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;Password&apos;]&quot;}
+                  <a name="User_03_My_Account_Change_Password">
+                  </a> <!-- User_03_My_Account_Change_Password -->
+                  <span class="method-name">User_03_My_Account_Change_Password</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/logout&quot; class=&quot;ico-logout&quot;&gt;...&lt;/a&gt; is not clickable at point (1276, 22). Other element would receive the click: &lt;p class=&quot;content&quot;&gt;...&lt;/p&gt;
   (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\user-pg\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a785c3eabcf604c09a1a1f4502dbb4b
-*** Element info: {Using=xpath, value=//input[@id=&apos;Password&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\user-pg\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9465b984c41a15a34ac9098517a83db9
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 28 more
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_06_Login_Not_Registered_Email">
-                  </a> <!-- User_06_Login_Not_Registered_Email -->
-                  <span class="method-name">User_06_Login_Not_Registered_Email</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;Password&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at commons.BasePage.waitForElementVisible(BasePage.java:488)
-	at commons.BasePage.inputToTextboxByID(BasePage.java:539)
-	at testcases.user.TestCase03_MyAccount.User_06_Login_Not_Registered_Email(TestCase03_MyAccount.java:186)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;Password&apos;]&quot;}
-  (Session info: chrome=112.0.5615.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\user-pg\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57248}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1a785c3eabcf604c09a1a1f4502dbb4b
-*** Element info: {Using=xpath, value=//input[@id=&apos;Password&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 28 more
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at commons.BasePage.clickToElement(BasePage.java:168)
+	at commons.BasePage.clickToHeaderLinkByName(BasePage.java:569)
+	at testcases.user.TestCase03_MyAccount.User_03_My_Account_Change_Password(TestCase03_MyAccount.java:243)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -262,16 +189,16 @@ Session ID: 1a785c3eabcf604c09a1a1f4502dbb4b
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="User_02_Login_Invalid_Email">
-                  </a> <!-- User_02_Login_Invalid_Email -->
-                  <span class="method-name">User_02_Login_Invalid_Email</span>
+                  <a name="User_01_My_Account_Update_Customer">
+                  </a> <!-- User_01_My_Account_Update_Customer -->
+                  <span class="method-name">User_01_My_Account_Update_Customer</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="User_03_Login_Invalid_Email">
-                  </a> <!-- User_03_Login_Invalid_Email -->
-                  <span class="method-name">User_03_Login_Invalid_Email</span>
+                  <a name="User_02_My_Account_Addresses">
+                  </a> <!-- User_02_My_Account_Addresses -->
+                  <span class="method-name">User_02_My_Account_Addresses</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -279,6 +206,13 @@ Session ID: 1a785c3eabcf604c09a1a1f4502dbb4b
                   <a name="User_04_Login_Blank_Password">
                   </a> <!-- User_04_Login_Blank_Password -->
                   <span class="method-name">User_04_Login_Blank_Password</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_05_Login_Invalid_Password">
+                  </a> <!-- User_05_Login_Invalid_Password -->
+                  <span class="method-name">User_05_Login_Invalid_Password</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -337,36 +271,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'User_05_Login_Invalid_Password')
+data.setCell(0, 1, 'User_02_My_Account_Addresses')
 data.setCell(0, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(0, 3, 40806);
+data.setCell(0, 3, 3756);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'User_06_Login_Not_Registered_Email')
+data.setCell(1, 1, 'User_01_My_Account_Update_Customer')
 data.setCell(1, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(1, 3, 40758);
+data.setCell(1, 3, 3670);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'User_01_My_Account_Update_Customer')
+data.setCell(2, 1, 'User_03_My_Account_Change_Password')
 data.setCell(2, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(2, 3, 21183);
+data.setCell(2, 3, 2441);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'User_04_Login_Blank_Password')
+data.setCell(3, 1, 'User_05_Login_Invalid_Password')
 data.setCell(3, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(3, 3, 21);
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'User_03_Login_Invalid_Email')
+data.setCell(4, 1, 'User_04_Login_Blank_Password')
 data.setCell(4, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(4, 3, 11);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'User_02_Login_Invalid_Email')
-data.setCell(5, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(5, 3, 4);
+data.setCell(4, 3, 3);
 window.suiteTableData['NopCommerce']= { tableData: data, tableDiv: 'times-div-NopCommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-NopCommerce">
               </div> <!-- times-div-NopCommerce -->
             </div> <!-- times-div -->
@@ -398,35 +328,31 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">User_01_My_Account_Update_Customer</span>
+                <span class="method-start">8965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">User_02_My_Account_Addresses</span>
+                <span class="method-start">12981 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">User_01_My_Account_Update_Customer</span>
-                <span class="method-start">12142 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">User_02_Login_Invalid_Email</span>
-                <span class="method-start">34977 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">User_03_Login_Invalid_Email</span>
-                <span class="method-start">35091 ms</span>
+                <span class="method-name">User_03_My_Account_Change_Password</span>
+                <span class="method-start">17035 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">User_04_Login_Blank_Password</span>
-                <span class="method-start">35106 ms</span>
+                <span class="method-start">19482 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">User_05_Login_Invalid_Password</span>
-                <span class="method-start">35133 ms</span>
+                <span class="method-start">19486 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">User_06_Login_Not_Registered_Email</span>
-                <span class="method-start">75950 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">19492 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

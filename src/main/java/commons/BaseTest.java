@@ -1,6 +1,8 @@
 package commons;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -102,11 +104,16 @@ public class BaseTest {
 			break;
 
 		case CHROME:
-			driver = WebDriverManager.chromedriver().create();
-			ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("useAutomationExtension", false);
-			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			driver = new ChromeDriver(options);
+			ChromeOptions chromeOptions = new ChromeOptions();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			chromeOptions.setExperimentalOption("prefs", prefs);
+			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+			chromeOptions.setExperimentalOption("useAutomationExtension", false);
+			chromeOptions.addArguments("--disable-notifications");
+			chromeOptions.addArguments("--disable-infobars");
+			driver = WebDriverManager.chromedriver().capabilities(chromeOptions).create();
 			break;
 
 		case CHROME_HEADLESS:

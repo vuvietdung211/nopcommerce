@@ -584,7 +584,12 @@ public class BasePage {
 	}
 	
 	public String getTextValueOfTextbox(WebDriver driver, String textboxID) {
-		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID);
-		return getElementText(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID);
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		return getElementText(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+	}
+	
+	public String getFirstSelectedInDropDownByName(WebDriver driver, String dropdownName) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
+		return getElementText(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
 	}
 }

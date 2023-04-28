@@ -7,10 +7,9 @@
     <classes>
       <class name="testcases.user.TestCase03_MyAccount">
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="User_06_Login_Not_Registered_Email"/>
-          <include name="User_01_My_Account_Update_Customer"/>
-          <include name="User_05_Login_Invalid_Password"/>
+          <include name="User_03_My_Account_Change_Password"/>
         </methods>
       </class> <!-- testcases.user.TestCase03_MyAccount -->
     </classes>

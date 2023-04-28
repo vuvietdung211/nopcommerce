@@ -16,7 +16,7 @@ public class PageGeneratorManager {
 	}
 
 	public static UserMyAccountPO getUserMyAccountPage(WebDriver driver) {
-		return new UserMyAccountPO();
+		return new UserMyAccountPO(driver);
 	}
 
 }
