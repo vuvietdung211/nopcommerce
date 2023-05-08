@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-NopCommerce" class="navigator-link">
-              <span class="suite-name border-failed">NopCommerce</span>
+              <span class="suite-name border-passed">NopCommerce</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-NopCommerce" class="hide-methods failed suite-NopCommerce"> (hide)</a> <!-- hide-methods failed suite-NopCommerce -->
-                      <a href="#" panel-name="suite-NopCommerce" class="show-methods failed suite-NopCommerce"> (show)</a> <!-- show-methods failed suite-NopCommerce -->
-                    </span>
-                    <div class="method-list-content failed suite-NopCommerce">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_03_My_Account_Change_Password">User_03_My_Account_Change_Password</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-NopCommerce -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,6 +108,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_02_My_Account_Addresses">User_02_My_Account_Addresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce" title="testcases.user.TestCase03_MyAccount" class="method navigator-link" hash-for-method="User_03_My_Account_Change_Password">User_03_My_Account_Change_Password</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,41 +137,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-NopCommerce" class="panel NopCommerce">
-          <div class="suite-NopCommerce-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.user.TestCase03_MyAccount</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_03_My_Account_Change_Password">
-                  </a> <!-- User_03_My_Account_Change_Password -->
-                  <span class="method-name">User_03_My_Account_Change_Password</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/logout&quot; class=&quot;ico-logout&quot;&gt;...&lt;/a&gt; is not clickable at point (1276, 22). Other element would receive the click: &lt;p class=&quot;content&quot;&gt;...&lt;/p&gt;
-  (Session info: chrome=112.0.5615.138)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-2GKR4O7&apos;, ip: &apos;10.30.10.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\user-pg\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9465b984c41a15a34ac9098517a83db9
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at commons.BasePage.clickToElement(BasePage.java:168)
-	at commons.BasePage.clickToHeaderLinkByName(BasePage.java:569)
-	at testcases.user.TestCase03_MyAccount.User_03_My_Account_Change_Password(TestCase03_MyAccount.java:243)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NopCommerce-class-failed -->
           <div class="suite-NopCommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -199,6 +155,13 @@ Session ID: 9465b984c41a15a34ac9098517a83db9
                   <a name="User_02_My_Account_Addresses">
                   </a> <!-- User_02_My_Account_Addresses -->
                   <span class="method-name">User_02_My_Account_Addresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_03_My_Account_Change_Password">
+                  </a> <!-- User_03_My_Account_Change_Password -->
+                  <span class="method-name">User_03_My_Account_Change_Password</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -273,21 +236,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'User_02_My_Account_Addresses')
+data.setCell(0, 1, 'User_03_My_Account_Change_Password')
 data.setCell(0, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(0, 3, 3756);
+data.setCell(0, 3, 4934);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'User_01_My_Account_Update_Customer')
+data.setCell(1, 1, 'User_02_My_Account_Addresses')
 data.setCell(1, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(1, 3, 3670);
+data.setCell(1, 3, 4687);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'User_03_My_Account_Change_Password')
+data.setCell(2, 1, 'User_01_My_Account_Update_Customer')
 data.setCell(2, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(2, 3, 2441);
+data.setCell(2, 3, 4169);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'User_05_Login_Invalid_Password')
 data.setCell(3, 2, 'testcases.user.TestCase03_MyAccount')
-data.setCell(3, 3, 3);
+data.setCell(3, 3, 4);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'User_04_Login_Blank_Password')
 data.setCell(4, 2, 'testcases.user.TestCase03_MyAccount')
@@ -296,7 +259,7 @@ window.suiteTableData['NopCommerce']= { tableData: data, tableDiv: 'times-div-No
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-NopCommerce">
               </div> <!-- times-div-NopCommerce -->
             </div> <!-- times-div -->
@@ -329,29 +292,27 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">User_01_My_Account_Update_Customer</span>
-                <span class="method-start">8965 ms</span>
+                <span class="method-start">10528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">User_02_My_Account_Addresses</span>
-                <span class="method-start">12981 ms</span>
+                <span class="method-start">15028 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">User_03_My_Account_Change_Password</span>
-                <span class="method-start">17035 ms</span>
+                <span class="method-start">19807 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">User_04_Login_Blank_Password</span>
-                <span class="method-start">19482 ms</span>
+                <span class="method-start">24745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">User_05_Login_Invalid_Password</span>
-                <span class="method-start">19486 ms</span>
+                <span class="method-start">24751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">19492 ms</span>
+                <span class="method-start">24757 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

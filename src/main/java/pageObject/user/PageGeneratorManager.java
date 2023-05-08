@@ -19,4 +19,11 @@ public class PageGeneratorManager {
 		return new UserMyAccountPO(driver);
 	}
 
+	public static UserCategoriesPO getUserCategoriesPage(WebDriver driver) {
+		return new UserCategoriesPO(driver);
+	}
+	
+	public static UserProductReviewPO getUserProductReview(WebDriver driver) {
+		return new UserProductReviewPO(driver);
+	}
 }

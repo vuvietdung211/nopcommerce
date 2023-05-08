@@ -11,9 +11,11 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import commons.DataHelper;
 import pageObject.user.PageGeneratorManager;
+import pageObject.user.UserCategoriesPO;
 import pageObject.user.UserHomePO;
 import pageObject.user.UserLoginPO;
 import pageObject.user.UserMyAccountPO;
+import pageObject.user.UserProductReviewPO;
 import pageObject.user.UserRegisterPO;
 
 public class TestCase03_MyAccount extends BaseTest{
@@ -22,6 +24,10 @@ public class TestCase03_MyAccount extends BaseTest{
 	UserRegisterPO userRegister;
 	UserLoginPO userLogin;
 	UserMyAccountPO userMyAccount;
+	UserCategoriesPO userCategories;
+	UserProductReviewPO userProductReview;
+	
+	
 	String registeredEmail, registeredPassword, firstName, lastName, errorFirstnameMessage, errorLastNameMessage, 
 	errorEmailMessage, errorPasswordMessage, wrongEmail, gender, day, month, year, successMessage, 
 	invalidPassword, errorLowerPassword, errorConfirmPassword, invalidEmail, errorWrongEmail
@@ -240,9 +246,13 @@ public class TestCase03_MyAccount extends BaseTest{
 
 		verifyEquals(userMyAccount.getNotificationBarText(), "Password was changed");
 
+		userMyAccount.closeSuccessHeaderPopup(driver);
+		
 		userMyAccount.clickToHeaderLinkByName(driver, "Log out");
 		
 		userLogin = PageGeneratorManager.getUserLoginPage(driver);
+		
+		userMyAccount.clickToHeaderLinkByName(driver, "Log in");
 		
 		userLogin.inputToTextboxByID(driver, registeredEmail, "Email");
 		
@@ -264,9 +274,19 @@ public class TestCase03_MyAccount extends BaseTest{
 	}
 	
 	@Test
-	public void User_04_Login_Blank_Password() {
+	public void User_04_My_Product_Review() {
+		userHome.clickToChildMenuCategoryByName(driver, "Computers", "Notebooks ");
 		
+		userCategories = PageGeneratorManager.getUserCategoriesPage(driver);
+		
+		userCategories.clickToProductByProductName("Apple MacBook Pro 13-inch");
+		
+		userCategories.clickToAddtoReviewButton(driver);
+		
+		userProductReview = PageGeneratorManager.getUserProductReview(driver);
 				
+		userProductReview.inputToTextboxByID(driver, "Good product", "AddProductReview_Title");
+
 	}
 	
 	@Test
@@ -278,6 +298,5 @@ public class TestCase03_MyAccount extends BaseTest{
 	
 	@AfterClass()
 	public void afterClass() {
-		driver.quit();
 	}
 }

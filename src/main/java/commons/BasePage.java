@@ -20,7 +20,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.qameta.allure.Step;
-import commons.UserBasePageUI;
 
 public class BasePage {
 	protected void sleepInSecond(int time) {
@@ -592,4 +591,32 @@ public class BasePage {
 		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
 		return getElementText(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName);
 	}
+	
+	public void closeSuccessHeaderPopup (WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.HEADER_POPUP_CLOSE_BUTTON);
+		clickToElement(driver, UserBasePageUI.HEADER_POPUP_CLOSE_BUTTON);
+	}
+	
+	public void clickToChildMenuCategoryByName(WebDriver driver, String mainMenu, String childMenu) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_MAIN_HEADER_MENU_BY_NAME, mainMenu);
+		hoverMouseToElement(driver, UserBasePageUI.DYNAMIC_MAIN_HEADER_MENU_BY_NAME,mainMenu);
+		
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_CHILD_HEADER_MENU_BY_NAME, childMenu);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_CHILD_HEADER_MENU_BY_NAME, childMenu);
+	}
+	
+	public void clicktoMainMenuCategoryByName(WebDriver driver, String mainMenu) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_MAIN_HEADER_MENU_BY_NAME, mainMenu);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_MAIN_HEADER_MENU_BY_NAME,mainMenu);
+	}
+	
+	
+	public void clickToAddtoReviewButton(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.ADD_YOUR_REVIEW_BUTTON);
+		clickToElement(driver, UserBasePageUI.ADD_YOUR_REVIEW_BUTTON);
+	}
+	
+	
+	
+	
 }
